@@ -1,0 +1,194 @@
+*{
+
+}
+body{
+    background-image: url(img/IMG-20241019-WA0013.jpg);
+    margin: 0;
+}
+h1{
+    background-image: linear-gradient(150deg, #ff3600,#ff6c00,#ffc500);
+    width: 100%;
+    height: 90px;
+    position: fixed;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 40px;
+    padding-top: 20px;
+    font-weight: 900;
+    color: white;
+    z-index: 3;
+}
+h1 a{
+    z-index: 4;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 10%;
+    border-radius: 50%;
+    border: none;
+    background-color: #ffc500;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.logo{
+    position: relative;
+    top: 28px;
+    transform: translate(-50%,-50%);
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 1px rgb(65, 65, 65);
+    z-index: 4;
+}
+.sony{
+    width: 800px;
+    height: 400px;
+    background-color: bisque;
+    border: solid 12px burlywood;
+    border-radius: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px;
+    display: inline-block;
+}
+.sony div{
+    border: solid 5px black;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+#op1{
+    top: 35%;
+    left: 15%;
+    transform: translate(-50%,-50%);
+}
+#op2{
+    top: 35%;
+    left: 38%;
+    transform: translate(-50%,-50%);
+}
+#op3{
+    top: 35%;
+    left: 62%;
+    transform: translate(-50%,-50%);
+}
+#op4{
+    top: 35%;
+    left: 85%;
+    transform: translate(-50%,-50%);
+}
+#slc1{
+    top: 65%;
+    left: 59%;
+    transform: translate(-50%,-50%);
+    z-index: 10;
+}
+.sony p{
+    font-family: sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+}
+.instruccion{
+    background-color: #ffc500;
+    border: solid 7px #ff6c00;
+    border-radius: 10px;
+    width: 400px;
+    position: absolute;
+    left: 25%;
+    top: -5%;
+    transform: translate(-50%-50%);
+    text-align: center;
+    color: white;
+}
+.palabra{
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 100px;
+    width: 800px;
+    font-weight: 900;
+}
+.sony img{
+    width: 100px;
+    height: 100px;
+}
+#simon{
+    width: 60px;
+    height: 60px;
+    display: none;
+}
+#bien{
+    position: absolute;
+    top: 70%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+#we1{
+    width: 800px;
+    height: 400px;
+    position: absolute;
+    border: none;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px;
+    display: inline-block;
+}
+#we2{
+    width: 800px;
+    height: 400px;
+    position: absolute;
+    border: none;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px;
+    display: none;
+}
+#opt1{
+    top: 35%;
+    left: 15%;
+    transform: translate(-50%,-50%);
+}
+#opt2{
+    top: 35%;
+    left: 38%;
+    transform: translate(-50%,-50%);
+}
+#opt3{
+    top: 35%;
+    left: 62%;
+    transform: translate(-50%,-50%);
+}
+#opt4{
+    top: 35%;
+    left: 85%;
+    transform: translate(-50%,-50%);
+}
+#slc2{
+    top: 65%;
+    left: 46%;
+    transform: translate(-50%,-50%);
+    z-index: 10;
+}
+#bien2{
+    position: absolute;
+    top: 70%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    display: none;
+}

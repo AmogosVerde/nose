@@ -1,0 +1,109 @@
+<?php
+include "controlador_login.php";
+session_start();
+if (empty($_SESSION["nombre"])) {
+    header("location: login.php");
+}
+?>
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="inicio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="inicio.js"></script>
+<title>Lingure</title>
+</head>
+<body>
+    <h1 class="titulo"><img src="lingure-logo.jpg" alt="" class="logo"><span id="lingure">LINGURE</span>
+    <div class="logeado">
+        <?php
+        echo $_SESSION["nombre"];
+        ?>
+    </div>
+    </h1>
+    <label>
+        <input type="checkbox" class="menuz">
+        
+        <div class="toogle">
+            <span class="top-lane common"></span>
+            <span class="mid-lane common"></span>
+            <span class="bottom-lane common"></span>
+        </div>
+        <div class="menu">
+        <ul>
+            <li><a href="inicio.php"><i class="fas fa-house"></i>Inicio</a></li>
+            <li><a href="perfil.html"><i class="fas fa-user"></i>Perfil</a></li>
+            <li><a href="home.php"><i class="fas fa-cogs"></i>Lecciones</a></li>
+            <li><a href="avance.html"><i class="fas fa-address-book"></i>avances</a></li>
+            <li><a href="configuracion.html"><i class="fas fa-bell"></i>configuración</a></li>
+            <li><a href="controlador_cerrar_sesion.php"><i class="fas fa-cancel"></i>Cerrar Sesion</a></li>
+        </ul>
+        </div> 
+    </label>
+    <div class="bienvenida">
+            <img src="img/ardilla.png" class="pet">
+        <p>"Cada palabra cuenta,<br>&nbsp&nbspcada lector importa"</p>
+    </div>
+    <section class="Qs">
+        <h1>¿Quienes Somos?</h1>
+        <p>Somos un equipo comprometido con la innovación educativa, creando herramientas tecnológicas para mejorar las habilidades de lectura y escritura de estudiantes de todas las edades. Nuestro software educativo integral potencia la lectura y escritura con métodos interactivos y personalizados, utilizando inteligencia artificial para adaptarse a las necesidades de cada estudiante.</p>
+    </section>
+    <img src="img/letras.jpg" class="bgml">
+    <label class="lecc1">
+        <h1>Tema 1: Primeros pasos</h1>
+        <p>Es hora de empezar algo nuevo y confiar en la magia de los comienzos. <br>Da tus primeros pasos en un nuevo aprendizaje con los conocimientos basicos para empezar</p>
+    <div class="gallery">
+        <div class="slides">
+            <div class="slide"><img src="img/bonito1.jpg" alt="Imagen 1"></div>
+            <div class="slide"><img src="img/bonito2.jpg" alt="Imagen 2"></div>
+            <div class="slide"><img src="img/bonito3.jpg" alt="Imagen 3"></div>
+            <div class="slide"><img src="img/nose.jpg" alt="Imagen 4"></div>
+        </div>
+    </div>
+    </label>
+    <img src="img/bgm2.jpg" alt="" class="bgm2">
+    <section class="Pto-intermedio">
+        <h1>Aventura en Literatura</h1>
+        <div class="objetivos">
+            <h2>Objetivos</h2>
+            - Fortalecer las habilidades de lectura y escritura.<br>
+            - Mejorar la comprensión lectora y la expresión escrita.
+        </div>
+        <div class="contenidos">
+            <H2>Contenidos</H2>
+            - Lectura de textos narrativos y expositivos.<br>
+            - Escritura de párrafos y pequeños relatos.<br>
+            - Actividades de vocabulario y ortografía.<br>
+            - Análisis y resumen de textos leídos.<br>
+            - Introducción a la escritura creativa.
+        </div>
+        <div class="gallery2">
+            <div class="slides">
+                <div class="slide"><img src="img/bonito4.jpg" alt="Imagen 1"></div>
+                <div class="slide"><img src="img/bonito5.jpg" alt="Imagen 2"></div>
+                <div class="slide"><img src="img/bonito6.jpg" alt="Imagen 3"></div>
+                <div class="slide"><img src="img/BabosexoX2.jpg" alt="Imagen 4"></div>
+            </div>
+    </section>
+    <img src="img/bgm1.jpg" alt="" class="bgm3">
+    <section class="Pto-avanzado">
+        <h1>Letras Finales</h1>
+        <div class="objetivos">
+            <h2>Objetivos</h2>
+            - Perfeccionar las habilidades de lectura y escritura.
+        </div>
+        <div class="contenidos">
+            <H2>Contenidos</H2>
+            - Lectura de textos literarios.<br>
+            - Corrección ortográfica.
+        </div>
+        <div class="gallery2">
+            <div class="slides">
+                <div class="slide"><img src="img/bonito7.jpg" alt="Imagen 1"></div>
+                <div class="slide"><img src="img/bonito8.jpg" alt="Imagen 2"></div>
+                <div class="slide"><img src="img/descarga (1).jpg" alt="Imagen 3"></div>
+                <div class="slide"><img src="img/nose.jpg" alt="Imagen 4"></div>
+            </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,147 @@
+*{
+
+}
+body{
+    background-image: url(img/IMG-20241019-WA0013.jpg);
+    margin: 0;
+}
+.titulo{
+    background-image: linear-gradient(150deg, #ff3600,#ff6c00,#ffc500);
+    width: 100%;
+    height: 90px;
+    position: fixed;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 40px;
+    padding-top: 20px;
+    font-weight: 900;
+    color: white;
+    z-index: 3;
+}
+.titulo a{
+    z-index: 4;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 10%;
+    border-radius: 50%;
+    border: none;
+    background-color: #ffc500;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.logo{
+    position: relative;
+    top: 28px;
+    transform: translate(-50%,-50%);
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 1px rgb(65, 65, 65);
+    z-index: 4;
+}
+.nose{
+    width: 800px;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 20px;
+    border: #ffc500 solid 10px;
+    background: blanchedalmond;
+    gap: 10px;
+}
+.nose h1{
+    font-family: sans-serif;
+    font-size: 50px;
+    width: 100%;
+    text-align: center;
+}
+.nose p{
+    font-family: sans-serif;
+    font-size: 40px;
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+}
+.nose div{
+    font-family: sans-serif;
+    font-size: 50px;
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+}
+.nose input{
+    width: 50px;
+    font-family: sans-serif;
+    font-size: 50px;
+    text-align: center;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    background: #ffc500;
+    box-shadow: 0 0 10px black;
+    color: white;
+}
+button{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    background: #ff6c00;
+    border: #ffc500 5px solid;
+    box-shadow: 0 0 10px black;
+    position: relative;
+    left: 45%;
+    cursor: pointer;
+}
+#p1{
+    display: none;
+}
+.correccion1{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    right: 17%;
+    top: 38%;
+}
+.correccion1 img{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    display: none;
+}
+.correccion2{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    right: 17%;
+    top: 48%;
+}
+.correccion2 img{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    display: none;
+}
+.correccion3{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    right: 17%;
+    top: 58%;
+}
+.correccion3 img{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    display: none;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport"content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="juego4.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="juego4.js"></script>
+<title>Leccion 02</title>
+</head>
+<body>
+    <h1 class="titulo"> <a href="/login/home.php"><i class="fas fa-backward"></i></a><img src="img/lingure-logo.jpg" alt="" class="logo">Lingure </h1>
+    <section>
+        <section class="nose">
+            <h1>Escucha con atencion y elije con que vocal inicia</h1>
+            <p class="instruccion"><img src="img/flecha izquierda.png" class="flecha"><span>Arrastra las vocales a su correspondiente imagen</span></p>
+            <section class="actividad">
+            <section class="opciones1">
+            <button onclick="sonido1()"><img src="img/ajolote.png"></button> <div id="slc1" ondrop="drop1(event)" ondragover="allowDrop(event)"></div> <button onclick="sonido2()"><img src="img/erizo.png"></button> <div id="slc2" ondrop="drop2(event)" ondragover="allowDrop(event)"></div>
+            <button onclick="sonido3()"><img src="img/oveja.png"></button> <div id="slc3" ondrop="drop3(event)" ondragover="allowDrop(event)"></div> <button onclick="sonido4()"><img src="img/iguana.png"></button> <div id="slc4" ondrop="drop4(event)" ondragover="allowDrop(event)"></div>
+            <button onclick="sonido5()"><img src="img/ornitorrinco.png"></button> <div id="slc5" ondrop="drop5(event)" ondragover="allowDrop(event)"></div> <button onclick="sonido6()"><img src="img/escalera.png"></button> <div id="slc6" ondrop="drop6(event)" ondragover="allowDrop(event)"></div>
+            <button onclick="sonido7()"><img src="img/unicornio.png"></button> <div id="slc7" ondrop="drop7(event)" ondragover="allowDrop(event)"></div> <button onclick="sonido8()"><img src="img/iglu.png"></button> <div id="slc8" ondrop="drop8(event)" ondragover="allowDrop(event)"></div>
+            <button onclick="sonido9()"><img src="img/ardilla.png"></button> <div id="slc9" ondrop="drop9(event)" ondragover="allowDrop(event)"></div> <button onclick="sonido10()"><img src="img/urano.png"></button> <div id="slc10" ondrop="drop10(event)" ondragover="allowDrop(event)"></div>
+            </section>
+
+            <section class="opciones2">
+            <div id="op1" ondrop="drop(event)" ondragover="allowDrop(event)"><img id="png1" src="img/am.png" draggable="true" ondragstart="drag(event)"></div>
+            <div id="op2" ondrop="drop(event)" ondragover="allowDrop(event)"><img id="png2" src="img/em.png" draggable="true" ondragstart="drag(event)"></div>
+            <div id="op3" ondrop="drop(event)" ondragover="allowDrop(event)"><img id="png3" src="img/im.png" draggable="true" ondragstart="drag(event)"></div>
+            <div id="op4" ondrop="drop(event)" ondragover="allowDrop(event)"><img id="png4" src="img/om.png" draggable="true" ondragstart="drag(event)"></div>
+            <div id="op5" ondrop="drop(event)" ondragover="allowDrop(event)"><img id="png5" src="img/um.png" draggable="true" ondragstart="drag(event)"></div>
+            <div id="op6" ondrop="drop(event)" ondragover="allowDrop(event)"><img id="png6" src="img/am.png" draggable="true" ondragstart="drag(event)"></div>
+            <div id="op7" ondrop="drop(event)" ondragover="allowDrop(event)"><img id="png7" src="img/em.png" draggable="true" ondragstart="drag(event)"></div>
+            <div id="op8" ondrop="drop(event)" ondragover="allowDrop(event)"><img id="png8" src="img/im.png" draggable="true" ondragstart="drag(event)"></div>
+            <div id="op9" ondrop="drop(event)" ondragover="allowDrop(event)"><img id="png9" src="img/om.png" draggable="true" ondragstart="drag(event)"></div>
+            <div id="op10" ondrop="drop(event)" ondragover="allowDrop(event)"><img id="png10" src="img/um.png" draggable="true" ondragstart="drag(event)"></div>
+            </section>
+            </section>
+            <audio id="audio1"><source src="sonidos/ajolote.mp3" type="audio/mp3"></audio>
+            <audio id="audio2"><source src="sonidos/erizo.mp3" type="audio/mp3"></audio>
+            <audio id="audio3"><source src="sonidos/oveja.mp3" type="audio/mp3"></audio>
+            <audio id="audio4"><source src="sonidos/iguana.mp3" type="audio/mp3"></audio>
+            <audio id="audio5"><source src="sonidos/ornitorrinco.mp3" type="audio/mp3"></audio>
+            <audio id="audio6"><source src="sonidos/escalera.mp3" type="audio/mp3"></audio>
+            <audio id="audio7"><source src="sonidos/unicornio.mp3" type="audio/mp3"></audio>
+            <audio id="audio8"><source src="sonidos/iglu.mp3" type="audio/mp3"></audio>
+            <audio id="audio9"><source src="sonidos/ardilla.mp3" type="audio/mp3"></audio>
+            <audio id="audio10"><source src="sonidos/urano.mp3" type="audio/mp3"></audio>
+        </section>
+    </section>
+    <button class="verificar" onclick="verificar()">verificar</button>
+</body>
+</html>

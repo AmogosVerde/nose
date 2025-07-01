@@ -1,0 +1,185 @@
+body{
+    background-image: url(IMG-20241019-WA0013.jpg);
+    margin: 0;
+}
+h1{
+    background-image: linear-gradient(150deg, #ff3600,#ff6c00,#ffc500);
+    width: 100%;
+    height: 90px;
+    position: fixed;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 40px;
+    padding-top: 20px;
+    font-weight: 900;
+    color: white;
+    z-index: 3;
+}
+h1 a{
+    z-index: 4;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 10%;
+    border-radius: 50%;
+    border: none;
+    background-color: #ffc500;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.logo{
+    position: relative;
+    top: 28px;
+    transform: translate(-50%,-50%);
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 1px rgb(65, 65, 65);
+    z-index: 4;
+}
+.vocales{
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%,-50%);
+    width: 70%;
+    height: 150px;
+    background-color: bisque;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 0 5px black;
+    padding: 20px 30px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.vocales button{
+    height: 70%;
+    width: 110px;
+    border: solid 7px #b72800;
+    border-radius: 50%;
+    background-color: #ff3600;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    font-size:60px;
+    transition: 0.3s;
+}
+#bt1:hover{
+    color: white;
+    font-size: 80px;
+    border: solid 7px #ff3600;
+    background-color: #ff6c00;
+    height: 80%;
+    width: 120px;
+}
+#bt2:hover{
+    color: white;
+    font-size: 80px;
+    border: solid 7px #ff3600;
+    background-color: #ff6c00;
+    height: 80%;
+    width: 120px;
+}
+#bt3:hover{
+    color: white;
+    font-size: 80px;
+    border: solid 7px #ff3600;
+    background-color: #ff6c00;
+    height: 80%;
+    width: 120px;
+}
+#bt4:hover{
+    color: white;
+    font-size: 80px;
+    border: solid 7px #ff3600;
+    background-color: #ff6c00;
+    height: 80%;
+    width: 120px;
+}
+#bt5:hover{
+    color: white;
+    font-size: 80px;
+    border: solid 7px #ff3600;
+    background-color: #ff6c00;
+    height: 80%;
+    width: 120px;
+}
+.muestra{
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+    height: 350px;
+    background-color: bisque;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 0 5px black;
+    padding: 20px 30px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.muestra button{
+    width: 250px;
+    height: 250px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.muestra img{
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+}
+#SecA{
+    position: absolute;
+    transition: 0.5;
+}
+#SecE{
+    position: absolute;
+    opacity: 0%;
+    display: none;
+    transition: 0.5;
+}
+#SecI{
+    position: absolute;
+    opacity: 0%;
+    display: none;
+    transition: 0.5;
+}
+#SecO{
+    position: absolute;
+    opacity: 0%;
+    display: none;
+    transition: 0.5;
+}
+#SecU{
+    position: absolute;
+    opacity: 0%;
+    display: none;
+    transition: 0.5;
+}
+.pasar{
+    height: 100px;
+    width: 100px;
+    background: #ff6c00;
+    border: solid 10px #ff3600;
+    position: absolute;
+    left: 85%;
+    top: 65%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    color: white;
+}

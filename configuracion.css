@@ -1,0 +1,143 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image: url(IMG-20241019-WA0013.jpg); 
+    background-color: #ff6c00;
+    margin: 0;
+}
+h1 {
+   position: fixed;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-image: linear-gradient(150deg,#ff3600,
+    #ff6c00,
+    #ffc500)
+    ;
+    width: 100%;
+    height: 90px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    padding-top: 20px;
+    z-index: 3;
+    animation: inicio 4s ease 0s 1; 
+}
+.logo{
+    position: relative;
+    top: 28px;
+    transform: translate(-50%,-50%);
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 1px rgb(65, 65, 65);
+    z-index: 4;
+    animation: logo 4s ease 0s 1;
+}
+#lingure{
+    animation: lingure 4s ease 0s 1;
+}
+@keyframes inicio{
+    0%{
+        height: 500%;
+        top:50%;
+    }
+    25%{height: 500%;top:50%}
+    100%{
+        height: 90px;
+        top: 0%
+    }
+}
+@keyframes logo{
+    0%{left: 20%;}
+    25%{left: 0;}
+    100%{}
+}
+@keyframes lingure{
+    0%{opacity: 0%;}
+    25%{opacity: 100%;}
+    100%{}
+}
+.menu{
+    z-index: 2;
+    height: 45%;
+    width: 280px;
+    position: fixed;
+    background-color: #ff6c00;
+    transition: 0.5s ease;
+    transform: translateX(-280px);
+}
+.menu ul{
+    padding-left: 0;
+}
+.menu ul li{
+    list-style: none;
+}
+.menu ul li a{
+    padding: 15px 0 15px 0;
+    font-weight: 900;
+    font-size:x-large;
+    transition: 0.2s ease-out;
+    text-decoration: none;
+    color: white;
+    font-family: monospace;
+    text-transform: capitalize;
+    display: block;
+    transform: translateY(0);
+    opacity: 0%;
+}
+.menu ul li a i{
+    width: 70px;
+    text-align: center;
+}
+.menuz{
+    display: none;
+    visibility: hidden;
+    -webkit-appearance: none;
+}
+.toogle{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    top: 2%;
+    left: 3%;
+    z-index: 4;
+    cursor: pointer;
+    animation: lingure 4s ease;
+}
+.toogle .common{
+    position: absolute;
+    height: 3px;
+    width: 50px;
+    background-color: white;
+    border-radius: 10px;
+}
+.toogle .top-lane{
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.toogle .mid-lane{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.toogle .bottom-lane{
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.menuz:checked ~ .menu{
+    transform: translateX(0);
+    transform: translateY(56px);
+}
+.menuz:checked ~ .menu a{
+    opacity: 100%;
+}
+ul li:hover a{
+    background-color: #ff3600;
+}

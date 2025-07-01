@@ -1,0 +1,729 @@
+*{
+
+}
+body{
+    background-image: url(IMG-20241019-WA0013.jpg);
+    margin: 0;
+}
+h1{
+    background-image: linear-gradient(150deg, #ff3600,#ff6c00,#ffc500);
+    width: 100%;
+    height: 90px;
+    position: fixed;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 40px;
+    padding-top: 20px;
+    font-weight: 900;
+    color: white;
+    z-index: 3;
+}
+h1 a{
+    z-index: 4;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 10%;
+    border-radius: 50%;
+    border: none;
+    background-color: #ffc500;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.logo{
+    position: relative;
+    top: 28px;
+    transform: translate(-50%,-50%);
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 1px rgb(65, 65, 65);
+    z-index: 4;
+}
+.mss{
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    font-family: monospace;
+    font-weight: 900;
+    font-size: 40px;
+    color: white;
+    opacity: 0%;
+}
+#ms1{
+    position: fixed;
+    bottom: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+.actv{
+    z-index: 1;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: monospace;
+    font-weight: 900;
+    color: #ffc500;
+    width: 500px;
+    height: 320px;
+    background: #fffbb6;
+    border: solid 10px #ffc500;
+    border-radius: 40%;
+    box-shadow: 10px 10px 0px black;
+}
+.actv p{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+.actv #imagen{
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    bottom: 60px;
+    left: 220px;
+}
+.bot{
+    display: none;
+    visibility: hidden;
+    -webkit-appearance: none;
+}
+.not{
+    border: solid 5px black;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: beige;
+    cursor: pointer;
+    transition: 0.5s;
+    position: absolute;
+    left: 25%;
+    top: 80px;
+}
+.not:hover{
+    background-color: rgb(191, 191, 162);
+}
+.bot:checked ~ .not{
+    background-color: rgb(4, 255, 0);
+}
+.bot:checked ~ .not .chk1{
+    opacity: 100%;
+}
+.bot:checked ~ .not .chk2{
+    opacity: 100%;
+}
+.chk1{
+    position: relative;
+    top: 19px;
+    left: 9px;
+    background-color: white;
+    width: 30px;
+    height: 7px;
+    z-index: 2;
+    border-radius: 3.5px;
+    rotate: -55deg;
+    opacity: 0%;
+}
+.chk2{
+    position: relative;
+    top: 18px;
+    left: 6px;
+    background-color: beige;
+    width: 15px;
+    height: 7px;
+    z-index: 2;
+    border-radius: 3.5px;
+    rotate: 35deg;
+    opacity: 0%;
+}
+.bot2{
+    display: none;
+    visibility: hidden;
+    -webkit-appearance: none;
+}
+.not2{
+    border: solid 5px black;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: beige;
+    cursor: pointer;
+    transition: 0.5s;
+    position: absolute;
+    left: 25%;
+    top: 140px;
+}
+.X{
+    opacity: 0%;
+}
+.X .X1{
+    width: 30px;
+    height: 7px;
+    background-color: white;
+    rotate: 45deg;
+    border-radius: 3.5px;
+    position: relative;
+    top: 17px;
+    left: 7px;
+}
+.X .X2{
+    width: 30px;
+    height: 7px;
+    background-color: white;
+    rotate: -45deg;
+    border-radius: 3.5px;
+    position: relative;
+    top: 10px;
+    left: 7px;
+}
+.not2:hover{
+    background-color: rgb(191, 191, 162);
+}
+.bot2:checked ~ .not2 .X{
+    opacity: 100%;
+}
+.bot2:checked ~ .not2{
+    background-color: rgb(255, 0, 0);
+}
+.bot3{
+    display: none;
+    visibility: hidden;
+    -webkit-appearance: none;
+}
+.not3{
+    border: solid 5px black;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: beige;
+    cursor: pointer;
+    transition: 0.5s;
+    position: absolute;
+    left: 25%;
+    top: 200px;
+}
+.XX{
+    opacity: 0%;
+}
+.XX .X1{
+    width: 30px;
+    height: 7px;
+    background-color: white;
+    rotate: 45deg;
+    border-radius: 3.5px;
+    position: relative;
+    top: 17px;
+    left: 7px;
+}
+.XX .X2{
+    width: 30px;
+    height: 7px;
+    background-color: white;
+    rotate: -45deg;
+    border-radius: 3.5px;
+    position: relative;
+    top: 10px;
+    left: 7px;
+}
+.not3:hover{
+    background-color: rgb(191, 191, 162);
+}
+.bot3:checked ~ .not3 .XX{
+    opacity: 100%;
+}
+.bot3:checked ~ .not3{
+    background-color: rgb(255, 0, 0);
+}
+.actv span{
+    font-weight: 900;
+    font-size: 50px;
+    background: none;
+    position: relative;
+}
+.A1{
+    left: 16%;
+    bottom: 20px;
+}
+.E1{
+    left: 9%;
+    top: 40px;
+}
+.I1{
+    left: 2%;
+    top: 100px;
+}
+#txt{
+    width: 100%;
+    height: 30px;
+    padding: 0%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 80px;
+}
+#nro2{
+    display: none;
+}
+.vot{
+    display: none;
+    visibility: hidden;
+    -webkit-appearance: none;
+}
+.mot{
+    border: solid 5px black;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: beige;
+    cursor: pointer;
+    transition: 0.5s;
+    position: absolute;
+    left: 25%;
+    top: 80px;
+}
+.mot:hover{
+    background-color: rgb(191, 191, 162);
+}
+.vot:checked ~ .mot{
+    background-color: rgb(255, 0, 0);
+}
+.vot:checked ~ .mot .X{
+    opacity: 100%;
+}
+.vot2{
+    display: none;
+    visibility: hidden;
+    -webkit-appearance: none;
+}
+.mot2{
+    border: solid 5px black;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: beige;
+    cursor: pointer;
+    transition: 0.5s;
+    position: absolute;
+    left: 25%;
+    top: 140px;
+}
+.mot2:hover{
+    background-color: rgb(191, 191, 162);
+}
+.vot2:checked ~ .mot2 .chk1{
+    opacity: 100%;
+}
+.vot2:checked ~ .mot2 .chk2{
+    opacity: 100%;
+}
+.vot2:checked ~ .mot2{
+    background-color: rgb(4, 255, 0);
+}
+.vot3{
+    display: none;
+    visibility: hidden;
+    -webkit-appearance: none;
+}
+.mot3{
+    border: solid 5px black;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: beige;
+    cursor: pointer;
+    transition: 0.5s;
+    position: absolute;
+    left: 25%;
+    top: 200px;
+}
+.vot3:hover{
+    background-color: rgb(191, 191, 162);
+}
+.vot3:checked ~ .mot3 .XX{
+    opacity: 100%;
+}
+.vot3:checked ~ .mot3{
+    background-color: rgb(255, 0, 0);
+}
+.E2{
+    left: 16%;
+    bottom: 20px;
+}
+.U2{
+    left: 9%;
+    top: 40px;
+}
+.O2{
+    left: 2%;
+    top: 100px;
+}
+
+
+#nro3{
+    display: none;
+}
+.pot{
+    display: none;
+    visibility: hidden;
+    -webkit-appearance: none;
+}
+.kot{
+    border: solid 5px black;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: beige;
+    cursor: pointer;
+    transition: 0.5s;
+    position: absolute;
+    left: 25%;
+    top: 80px;
+}
+.kot:hover{
+    background-color: rgb(191, 191, 162);
+}
+.pot:checked ~ .kot{
+    background-color: rgb(4, 255, 0);
+}
+.pot:checked ~ .kot .chk1{
+    opacity: 100%;
+}
+.pot:checked ~ .kot .chk2{
+    opacity: 100%;
+}
+.pot2{
+    display: none;
+    visibility: hidden;
+    -webkit-appearance: none;
+}
+.kot2{
+    border: solid 5px black;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: beige;
+    cursor: pointer;
+    transition: 0.5s;
+    position: absolute;
+    left: 25%;
+    top: 140px;
+}
+.kot2:hover{
+    background-color: rgb(191, 191, 162);
+}
+.pot:checked ~ .kot .X{
+    opacity: 100%;
+}
+.pot2:checked ~ .kot2{
+    background-color: rgb(255, 0, 0);
+}
+.pot3{
+    display: none;
+    visibility: hidden;
+    -webkit-appearance: none;
+}
+.kot3{
+    border: solid 5px black;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: beige;
+    cursor: pointer;
+    transition: 0.5s;
+    position: absolute;
+    left: 25%;
+    top: 200px;
+}
+.pot3:hover{
+    background-color: rgb(191, 191, 162);
+}
+.pot3:checked ~ .kot3 .XX{
+    opacity: 100%;
+}
+.pot3:checked ~ .kot3{
+    background-color: rgb(255, 0, 0);
+}
+.I3{
+    left: 16%;
+    bottom: 20px;
+}
+.O3{
+    left: 9%;
+    top: 40px;
+}
+.A3{
+    left: 2%;
+    top: 100px;
+}
+
+
+#nro4{
+    display: none;
+}
+.tot{
+    display: none;
+    visibility: hidden;
+    -webkit-appearance: none;
+}
+.fot{
+    border: solid 5px black;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: beige;
+    cursor: pointer;
+    transition: 0.5s;
+    position: absolute;
+    left: 25%;
+    top: 80px;
+}
+.fot:hover{
+    background-color: rgb(191, 191, 162);
+}
+.tot:checked ~ .fot{
+    background-color: rgb(255, 0, 0);
+}
+.tot:checked ~ .fot .XX{
+    opacity: 100%;
+}
+
+.tot2{
+    display: none;
+    visibility: hidden;
+    -webkit-appearance: none;
+}
+.fot2{
+    border: solid 5px black;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: beige;
+    cursor: pointer;
+    transition: 0.5s;
+    position: absolute;
+    left: 25%;
+    top: 140px;
+}
+.fot2:hover{
+    background-color: rgb(191, 191, 162);
+}
+.tot:checked ~ .fot .X{
+    opacity: 100%;
+}
+.tot2:checked ~ .fot2{
+    background-color: rgb(255, 0, 0);
+}
+.tot3{
+    display: none;
+    visibility: hidden;
+    -webkit-appearance: none;
+}
+.fot3{
+    border: solid 5px black;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: beige;
+    cursor: pointer;
+    transition: 0.5s;
+    position: absolute;
+    left: 25%;
+    top: 200px;
+}
+.tot3:hover{
+    background-color: rgb(191, 191, 162);
+}
+.tot3:checked ~ .fot3 .chk1{
+    opacity: 100%;
+}
+.tot3:checked ~ .fot3 .chk2{
+    opacity: 100%;
+}
+.tot3:checked ~ .fot3{
+    background-color: rgb(4, 255, 0);
+}
+.U4{
+    left: 16%;
+    bottom: 20px;
+}
+.A4{
+    left: 9%;
+    top: 40px;
+}
+.O4{
+    left: 2%;
+    top: 100px;
+}
+
+
+
+#nro5{
+    display: none;
+}
+.yot{
+    display: none;
+    visibility: hidden;
+    -webkit-appearance: none;
+}
+.got{
+    border: solid 5px black;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: beige;
+    cursor: pointer;
+    transition: 0.5s;
+    position: absolute;
+    left: 25%;
+    top: 80px;
+}
+.got:hover{
+    background-color: rgb(191, 191, 162);
+}
+.yot:checked ~ .got{
+    background-color: rgb(4, 255, 0);
+}
+.yot:checked ~ .got .chk1{
+    opacity: 100%;
+}
+.yot:checked ~ .got .chk2{
+    opacity: 100%;
+}
+.yot2{
+    display: none;
+    visibility: hidden;
+    -webkit-appearance: none;
+}
+.got2{
+    border: solid 5px black;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: beige;
+    cursor: pointer;
+    transition: 0.5s;
+    position: absolute;
+    left: 25%;
+    top: 140px;
+}
+.got2:hover{
+    background-color: rgb(191, 191, 162);
+}
+.yot:checked ~ .got .X{
+    opacity: 100%;
+}
+.yot2:checked ~ .got2{
+    background-color: rgb(255, 0, 0);
+}
+.yot3{
+    display: none;
+    visibility: hidden;
+    -webkit-appearance: none;
+}
+.got3{
+    border: solid 5px black;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: beige;
+    cursor: pointer;
+    transition: 0.5s;
+    position: absolute;
+    left: 25%;
+    top: 200px;
+}
+.yot3:hover{
+    background-color: rgb(191, 191, 162);
+}
+.yot3:checked ~ .got3 .XX{
+    opacity: 100%;
+}
+.yot3:checked ~ .got3{
+    background-color: rgb(255, 0, 0);
+}
+.E5{
+    left: 16%;
+    bottom: 20px;
+}
+.U5{
+    left: 9%;
+    top: 40px;
+}
+.I5{
+    left: 2%;
+    top: 100px;
+}
+
+#nro6{
+    display: none;
+    padding: 0px;
+    position: absolute;
+    bottom: 30px;
+}
+#nro6 img{
+    width: 150px;
+    height: 150px;
+}
+#nro6 p{
+    position: relative;
+    top: 30px;
+}
+.kirbo1{
+    position: relative;
+    
+}
+.kirbo2{
+    position: relative;
+    
+}
+.kirbo3{
+    position: relative;
+   
+}
+
+.mrq{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    animation: circulito 6s linear 0s infinite;
+}
+#mrq1{
+    left:305px;
+    top: 140px;
+}
+#mrq2{
+    left:295px;
+    top: 300px;
+}
+#mrq3{
+    left:305px;
+    top: 460px;
+}
+#mrq4{
+    right:295px;
+    top: 150px;
+}
+#mrq5{
+    right:305px;
+    top: 300px;
+}
+
+#mrq6{
+    right:295px;
+    top: 450px;
+}
+
+@keyframes circulito{
+    0%{rotate: 0;}
+    100%{rotate: 360deg;}
+}

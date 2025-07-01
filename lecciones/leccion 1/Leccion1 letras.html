@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport"content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="letras.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="letras.js"></script>
+<title>Leccion 01</title>
+</head>
+<body>
+    <h1> <a href="/login/home.php"><i class="fas fa-backward"></i></a><img src="lingure-logo.jpg" alt="" class="logo">Lingure </h1>
+    <section class="actv">
+        <p id="pito">Con que vocal empieza</p>
+        <div id="nro1">
+            <label>
+                <input type="checkbox" class="bot" onclick="chido()">
+                <span class="A1">A</span><div class="not">
+                    <div class="chk1"></div><div class="chk2"></div>
+                </div>
+            </label>
+            
+            <label>
+                <input type="checkbox" class="bot2" onclick="nochido()">
+                <span class="E1">E</span><div class="not2">
+            <div class="X"><div class="X1"></div><div class="X2"></div></div>
+                </div>
+            </label>
+            
+            <label>
+                <input type="checkbox" class="bot3" onclick="nochido()">
+                <span class="I1">I</span><div class="not3">
+            <div class="XX"><div class="X1"></div><div class="X2"></div></div>
+                </div>
+            </label>
+        </div>
+        <div id="nro2">
+            <label>
+                <input type="checkbox" class="vot" onclick="nochido2()" id="input">
+                <span class="E2">E</span><div class="mot">
+            <div class="X"><div class="X1"></div><div class="X2"></div></div>
+                </div>
+            </label>
+            
+            <label>
+                <input type="checkbox" class="vot2" onclick="chido2()" id="input">
+                <span class="U2">U</span><div class="mot2">
+                    <div class="chk1"></div><div class="chk2"></div>
+                </div>
+            </label>
+            
+            <label>
+                <input type="checkbox" class="vot3" onclick="nochido2()" id="input">
+                <span class="O2">O</span><div class="mot3">
+            <div class="XX"><div class="X1"></div><div class="X2"></div></div>
+                </div>
+            </label>
+        </div>
+
+        <div id="nro3">
+            <label>
+                <input type="checkbox" class="pot" onclick="chido3()" id="input">
+                <span class="I3">I</span><div class="kot">
+                    <div class="chk1"></div><div class="chk2"></div>
+                </div>
+            </label>
+            
+            <label>
+                <input type="checkbox" class="pot2" onclick="nochido3()" id="input">
+                <span class="O3">O</span><div class="kot2">
+            <div class="X"><div class="X1"></div><div class="X2"></div></div>
+                </div>
+            </label>
+            
+            <label>
+                <input type="checkbox" class="pot3" onclick="nochido3()" id="input">
+                <span class="A3">A</span><div class="kot3">
+            <div class="XX"><div class="X1"></div><div class="X2"></div></div>
+                </div>
+            </label>
+        </div>
+
+        <div id="nro4">
+            <label>
+                <input type="checkbox" class="tot" onclick="nochido4()" id="input">
+                <span class="U4">U</span><div class="fot">
+            <div class="XX"><div class="X1"></div><div class="X2"></div></div>
+                </div>
+            </label>
+            
+            <label>
+                <input type="checkbox" class="tot2" onclick="nochido4()" id="input">
+                <span class="A4">A</span><div class="fot2">
+            <div class="X"><div class="X1"></div><div class="X2"></div></div>
+                </div>
+            </label>
+            
+            <label>
+                <input type="checkbox" class="tot3" onclick="chido4()" id="input">
+                <span class="O4">O</span><div class="fot3">
+                    <div class="chk1"></div><div class="chk2"></div>
+                </div>
+            </label>
+        </div>
+
+        <div id="nro5">
+            <label>
+                <input type="checkbox" class="yot" onclick="chido5()" id="input">
+                <span class="E5">E</span><div class="got">
+                    <div class="chk1"></div><div class="chk2"></div>
+                </div>
+            </label>
+            
+            <label>
+                <input type="checkbox" class="yot2" onclick="nochido5()" id="input">
+                <span class="U5">U</span><div class="got2">
+            <div class="X"><div class="X1"></div><div class="X2"></div></div>
+                </div>
+            </label>
+            
+            <label>
+                <input type="checkbox" class="yot3" onclick="nochido5()" id="input">
+                <span class="I5">I</span><div class="got3">
+            <div class="XX"><div class="X1"></div><div class="X2"></div></div>
+                </div>
+            </label>
+        </div>
+
+        <div id="nro6">
+            <p>Excelente Trabajo</p>
+            <img src="kirby-dance.gif" class="kirbo1">
+            <img src="kirby-dance.gif" class="kirbo2">
+            <img src="kirby-dance.gif" class="kirbo3">
+            <p>Has terminado la lección</p>
+        </div>
+
+            <p id="txt"></p>
+                <audio id="klasd">
+                    <source src="Bien.mp3" type="audio/mp3">
+                </audio>
+                <audio id="bien">
+                    <source src="chido.mp3" type="audio/mp3">
+                </audio>
+                <audio id="mal">
+                    <source src="NoChido.mp3" type="audio/mp3">
+                </audio>
+                <audio id="victory">
+                    <source src="Kirby Super Star - Victory Dance 1.mp3" type="audio/mp3">
+                </audio>
+        <img src="abeja.png" id="imagen">
+    </section>
+<img src="star.png" alt="" class="mrq" id="mrq1">
+<img src="star.png" alt="" class="mrq" id="mrq2">
+<img src="star.png" alt="" class="mrq" id="mrq3">
+<img src="star.png" alt="" class="mrq" id="mrq4">
+<img src="star.png" alt="" class="mrq" id="mrq5">
+<img src="star.png" alt="" class="mrq" id="mrq6">
+</body>
+</html>

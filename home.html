@@ -1,0 +1,146 @@
+<?php
+include "controlador_login.php";
+session_start();
+if (empty($_SESSION["nombre"])) {
+    header("location: login.php");
+}
+?>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport"content="width=device-width,initial-scale=1.0">
+<link rel="stylesheet" href="home.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="home.js"></script>
+<title>Lingure</title>
+</head>
+<body>
+
+<h1><img src="lingure-logo.jpg" alt="" class="logo"><span id="lingure">LINGURE</span></h1>
+<label>
+    <input type="checkbox" class="menuz">
+    <div class="toogle">
+        <span class="top-lane common"></span>
+        <span class="mid-lane common"></span>
+        <span class="bottom-lane common"></span>
+    </div>
+    <div class="menu">
+    <ul>
+        <li><a href="inicio.php"><i class="fas fa-house"></i>Inicio</a></li>
+        <li><a href="perfil.html"><i class="fas fa-user"></i>Perfil</a></li>
+        <li><a href="home.html"><i class="fas fa-address-book"></i>Lecciones</a></li>
+        <li><a href="avance.html"><i class="fas fa-address-book"></i>avances</a></li>
+        <li><a href="configuracion.html"><i class="fas fa-cogs"></i>configuración</a></li>
+    </ul>
+    </div> 
+</label>
+<label>
+<input type="checkbox" class="lezz1">
+    <div class="buttom1">
+    <span>A</span>
+    </div>
+<div class="Less1">
+    <span>Lección:01<br> Las Letras<br><a href="lecciones/leccion 1/vocales.html">INCIAR&nbsp<i class="fas fa-forward-step"></i></a></span>
+</div>
+</label>
+<label>
+    <input type="checkbox" class="lezz2">
+        <div class="buttom2">
+        <span>B</span>
+        </div>
+    <div class="Less2">
+        <span>Lección:02<br> Silabas<br><a href="lecciones/leccion 2/leccion2.html">INCIAR&nbsp<i class="fas fa-forward-step"></i></a></span>
+    </div>
+</label>
+<label>
+<input type="checkbox" class="lezz3">
+    <div class="buttom3">
+    <span>C</span>
+    </div>
+<div class="Less3">
+    <span>Lección:03<br> Palabras<br><a href="lecciones/leccion 3/juego3.html">INCIAR&nbsp<i class="fas fa-forward-step"></i></a></span>
+</div>
+</label>
+<label>
+    <input type="checkbox" class="lezz4">
+        <div class="buttom4">
+        <span>D</span>
+        </div>
+    <div class="Less4">
+        <span>Lección:04<br>Lectura<br><a href="lecciones/leccion 4/juego5.php">INCIAR&nbsp<i class="fas fa-forward-step"></i></a></span>
+    </div>
+</label>
+<label>
+<input type="checkbox" class="lezz5">
+    <div class="buttom5">
+    <span>E</span>
+    </div>
+<div class="Less5">
+    <span>Lección:05<br><br><a href="lecciones/leccion 5/juego4.html">INCIAR&nbsp<i class="fas fa-forward-step"></i></a></span>
+</div>
+</label>
+<label>
+    <input type="checkbox" class="lezz6">
+        <div class="buttom6">
+        <span>F</span>
+        </div>
+    <div class="Less6">
+        <span>Lección:06<br><br><a href="">INCIAR&nbsp<i class="fas fa-forward-step"></i></a></span>
+    </div>
+</label>
+<img src="Teddiursa_icon.gif" alt="" class="tedd">
+<div class="p1">
+    <span></span>
+    <span class="l2"></span>
+    <span class="l3"></span>
+    <span class="l4"></span>
+    <span class="l5"></span>
+    <span class="l6"></span>
+    <span class="l7"></span>
+</div>
+<div class="p2">
+    <span class="j1"></span>
+    <span class="j2"></span>
+    <span class="j3"></span>
+    <span class="j4"></span>
+    <span class="j5"></span>
+    <span class="j6"></span>
+    <span class="j7"></span>
+</div>
+<div class="p3">
+    <span></span>
+    <span class="l2"></span>
+    <span class="l3"></span>
+    <span class="l4"></span>
+    <span class="l5"></span>
+    <span class="l6"></span>
+    <span class="l7"></span>
+</div>
+<div class="p4">
+    <span class="j1"></span>
+    <span class="j2"></span>
+    <span class="j3"></span>
+    <span class="j4"></span>
+    <span class="j5"></span>
+    <span class="j6"></span>
+    <span class="j7"></span>
+</div>
+<div class="p5">
+    <span></span>
+    <span class="l2"></span>
+    <span class="l3"></span>
+    <span class="l4"></span>
+    <span class="l5"></span>
+    <span class="l6"></span>
+    <span class="l7"></span>
+</div>
+    <img src="img/arbol2.png" id="ig1">
+    <img src="img/arbusto.png" id="ig2">
+    <img src="img/lago.png" id="ig3">
+    <img src="img/nube.png" id="ig4">
+    <img src="img/castle.png" id="ig5">
+    <img src="img/arbol3.png" id="ig6">
+
+<footer class="pdp"></footer>
+</body>
+</html>
